@@ -1,4 +1,4 @@
-#include "main.h"
+#include "../main.h"
 
 /**
 * main - example function to test code.
