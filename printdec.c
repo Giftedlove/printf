@@ -10,13 +10,14 @@ int print_decimal(va_list ap)
 	int num = va_arg(ap, int);
 	unsigned int abs_num = num < 0 ? -num : num;
 	int len = 0;
+	unsigned int divisor;
 
 	if (num < 0)
 	{
 		_putchar('-');
 		++len;
 	}
-	unsigned int divisor = 1;
+	divisor = 1;
 
 	while (abs_num / divisor >= 10)
 	{

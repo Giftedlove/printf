@@ -8,10 +8,9 @@
 int _printf(const char *format, ...)
 {
 	va_list ap;
+	int length = 0;
 
 	va_start(ap, format);
-
-	int length = 0;
 
 	while (*format)
 	{
