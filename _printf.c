@@ -33,6 +33,7 @@ int _printf(const char *format, ...)
 			length += print_string(ap);
 			break;
 			default:
+			length += _putchar('%');
 			_putchar(*(format - 1));
 			++length;
 			break;
